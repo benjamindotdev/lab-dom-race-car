@@ -17,12 +17,20 @@
         <p>Use the left and right arrow to control the car!</p>
         <img src="./images/arrows.png" alt="" class="arrows-img" />
       </div>
+      <div id="user-container">
+        <h1 id="highscore"></h1>
+        <ul id="userscores"></ul>
+        <form id="user-info">
+          <input type="text" id="username" placeholder="Enter your name" />
+        </form>
+      </div>
 
       <div id="game-container">
         <div>
           <h2>Stats</h2>
           <p>Score: <span id="score">0</span></p>
           <p>Lives: <span id="lives">3</span></p>
+          <p>Distance: <span id="distance">0</span></p>
         </div>
         <!-- #game-screen is initially hidden using CSS style display: none -->
         <div id="game-screen"></div>
@@ -37,6 +45,9 @@
       </div>
     </main>
 
+    <script type="text/javascript" src="js/component.js"></script>
+    <script type="text/javascript" src="js/obstacle.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
     <script type="text/javascript" src="js/game.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
